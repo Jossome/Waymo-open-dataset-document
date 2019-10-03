@@ -60,50 +60,50 @@ open_dataset
 |   `-- GLOBAL_SHUTTER
 |-- Frame
 |   |-- images ⇒ list of CameraImage
-|	|   |-- name (CameraName)
-|   |	|-- image
-|	|   |-- pose
-|	|   |-- velocity (v_x, v_y, v_z, w_x, w_y, w_z)
-|	|   |-- pose_timestamp
-|	|   |-- shutter
-|	|   |-- camera_trigger_time
-|	|   `-- camera_readout_done_time
+|   |   |-- name (CameraName)
+|   |   |-- image
+|   |   |-- pose
+|   |   |-- velocity (v_x, v_y, v_z, w_x, w_y, w_z)
+|   |   |-- pose_timestamp
+|   |   |-- shutter
+|   |   |-- camera_trigger_time
+|   |   `-- camera_readout_done_time
 |   |-- Context
 |   |   |-- name
 |   |   |-- camera_calibrations ⇒ list of CameraCalibration
-|	|	|	|-- name
-|	|	|	|-- intrinsic
-|	|	|	|-- extrinsic
-|	|	|	|-- width
-|	|	|	|-- height
-|	|	|	`-- rolling_shutter_direction (RollingShutterReadOutDirection)
+|   |   |   |-- name
+|   |   |   |-- intrinsic
+|   |   |   |-- extrinsic
+|   |   |   |-- width
+|   |   |   |-- height
+|   |   |   `-- rolling_shutter_direction (RollingShutterReadOutDirection)
 |   |   |-- laser_calibrations ⇒ list of LaserCalibration
-|	|	|	|-- name
-|	|	|	|-- beam_inclinations
-|	|	|	|-- beam_inclination_min
-|	|	|	|-- beam_inclination_max
-|	|	|	`-- extrinsic
+|   |   |   |-- name
+|   |   |   |-- beam_inclinations
+|   |   |   |-- beam_inclination_min
+|   |   |   |-- beam_inclination_max
+|   |   |   `-- extrinsic
 |   |   `-- Stats
-|	|		|-- laser_object_counts
-|	|		|-- camera_object_counts
-|	|		|-- time_of_day
-|	|		|-- location
-|	|		`-- weather
+|   |   |-- laser_object_counts
+|   |   |-- camera_object_counts
+|   |   |-- time_of_day
+|   |   |-- location
+|   |   `-- weather
 |   |-- timestamp_micros
 |   |-- pose
 |   |-- lasers ⇒ list of Laser
-|	|   |-- name (LaserName)
-|	|   |-- ri_return1 (RangeImage class)
-|	|	|	|-- range_image_compressed
-|	|	|	|-- camera_projection_compressed
-|	|	|	|-- range_image_pose_compressed
-|	|	|	`-- range_image
-|	|   `-- ri_return2 (same as ri_return1)
+|   |   |-- name (LaserName)
+|   |   |-- ri_return1 (RangeImage class)
+|   |   |   |-- range_image_compressed
+|   |   |   |-- camera_projection_compressed
+|   |   |   |-- range_image_pose_compressed
+|   |   |   `-- range_image
+|   |   `-- ri_return2 (same as ri_return1)
 |   |-- laser_labels ⇒ list of Label
 |   |-- projected_lidar_labels (same as camera_labels)
 |   |-- camera_labels ⇒ list of CameraLabels
-|	|   |-- name (CameraName)
-|	|   `-- labels ⇒ list of Label
+|   |   |-- name (CameraName)
+|   |   `-- labels ⇒ list of Label
 |   `-- no_label_zones (Refer to the doc)
 `-- Label
     |-- Box
