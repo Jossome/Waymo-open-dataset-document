@@ -202,8 +202,8 @@ for lbl in frame.camera_labels:
         break
 
 for label in front_label.labels:
-	if label.type == 1:
-	    pass
+    if label.type == 1:
+        pass
 ```
 -  2D bbox for camera images
 - Only first 3 batches of the training set and the first batch of validation set have 2D labels.
@@ -225,8 +225,8 @@ for label in front_label.labels:
 #### 3D labels
 ```
 for label in frame.laser_labels:
-	if label.type == 1:
-		pass
+    if label.type == 1:
+        pass
 ```
 - This is different from camera labels. It does not distinguish which lidar it's using. `frame.laser_labels` simply stores all bboxes in all directions in that frame.
 	> The doc provides no information on how these labels are related to different lidars. 
