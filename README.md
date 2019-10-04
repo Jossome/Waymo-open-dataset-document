@@ -48,7 +48,7 @@ open_dataset
 |   |-- UNKNOWN
 |   |-- FRONT
 |   |-- FRONT_LEFT
-|	|-- FRONT_RIGHT
+|   |-- FRONT_RIGHT
 |   |-- SIDE_LEFT
 |   `-- SIDE_RIGHT
 |-- RollingShutterReadOutDirection
