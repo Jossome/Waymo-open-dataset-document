@@ -232,8 +232,8 @@ for label in frame.laser_labels:
 	> The doc provides no information on how these labels are related to different lidars. 
 	
 - The other attributes of `label` are pretty similar. Except that the `box` is 3D. Here are the correspondence:
-	- `box.width` <=> `box.center_x` along the "front/forward" direction. 
-	- `box.length` <=> `box.center_y` along the "left" direction.
+	- `box.length` <=> `box.center_x` along the "front/forward" direction. 
+	- `box.width` <=> `box.center_y` along the "left" direction.
 	- `box.height` <=> `box.center_z` along the "upward/pointing-to-the-sky" direction.
 	- Please refer to the doc about **Vehicle frame** in the **Coordinate systems** section.
 
