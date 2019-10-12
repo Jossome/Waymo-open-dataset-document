@@ -245,7 +245,7 @@ This subsubsection lists all other features that might potentially be useful.
 	- `label.metadata.accel_x`
 	- `label.metadata.accel_y`
 	- The unit of the data still unknown.
-- However, only 3D labels have such metadata. For 2D values, they are stored in the `image.velocity` (refer to the tree structure), but what does `w_x` stand for? Angular velocity?
+- However, only 3D labels have such metadata. (Note that these are for bboxes, not for the ego car itself). The data for the car itself are stored in the `image.velocity` (refer to the tree structure), but what does `w_x` stand for? Angular velocity?
 
 ## Troubleshooting
 - You may need to use `tf.enable_eager_execution()` to load the dataset.
