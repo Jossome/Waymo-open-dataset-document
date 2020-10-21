@@ -248,8 +248,9 @@ This subsubsection lists all other features that might potentially be useful.
 - However, only 3D labels have such metadata. (Note that these are for bboxes, not for the ego car itself). The data for the car itself are stored in the `image.velocity` (refer to the tree structure), but what does `w_x` stand for? Angular velocity?
 
 ## Troubleshooting
-- You may need to use `tf.enable_eager_execution()` to load the dataset.
-- To be continued...
+- `tf.enable_eager_execution()` is required for tf1.x to load the dataset. tf2.x has eager execution by default.
+- Built dataset using pip3 install in the [tutorial](https://github.com/waymo-research/waymo-open-dataset/blob/master/tutorial/tutorial.ipynb), but still cannot import `dataset_pb2`:
+	- Solution: use protoc to manually generate python files like in [this issue](https://github.com/waymo-research/waymo-open-dataset/issues/35#issuecomment-536451837)
 
 ---
 Reference:
