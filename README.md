@@ -253,6 +253,15 @@ This subsubsection lists all other features that might potentially be useful.
 	- Solution: use protoc to manually generate python files like in [this issue](https://github.com/waymo-research/waymo-open-dataset/issues/35#issuecomment-536451837)
 - Using code based on Kitti dataset? See [this repo](https://github.com/caizhongang/waymo_kitti_converter) for a convertion tool. It fixed the difference in the coordination systems between Waymo and Kitti dataset, so you can visualize the dataset with [kitti_object_vis](https://github.com/kuixu/kitti_object_vis) with no trouble.
 
+## Differentiable LiDAR-to-depth
+- Get gradients of LiDAR point coordinates:
+	- In the tutorial, they already showed us how to project points onto the image with `points_all` and `cp_points_all`.
+	- `cp_points_all` stores the image pixel location, and the norm of `points_all` is the depth value of the corresponding pixel.
+- Modifying the original point cloud:
+	- After modifying the coordinates, we need to re-generate `cp_points_all`.
+	- They provided a [third party tool](https://github.com/waymo-research/waymo-open-dataset/tree/master/third_party/camera) for this, please refer to [this issue](https://github.com/waymo-research/waymo-open-dataset/issues/127).
+	- Note that the generation of pixel location (`cp_points_all`) doesn't have to be differentiable, so we can just use the third party tool.
+
 ---
 Reference:
 @misc{waymo_open_dataset,
