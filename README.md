@@ -252,6 +252,7 @@ This subsubsection lists all other features that might potentially be useful.
 - Built dataset using pip3 install in the [tutorial](https://github.com/waymo-research/waymo-open-dataset/blob/master/tutorial/tutorial.ipynb), but still cannot import `dataset_pb2`:
 	- Solution: use protoc to manually generate python files like in [this issue](https://github.com/waymo-research/waymo-open-dataset/issues/35#issuecomment-536451837)
 - Using code based on Kitti dataset? See [this repo](https://github.com/caizhongang/waymo_kitti_converter) for a convertion tool. It fixed the difference in the coordination systems between Waymo and Kitti dataset, so you can visualize the dataset with [kitti_object_vis](https://github.com/kuixu/kitti_object_vis) with no trouble.
+- How to read `gt.bin` file: [this issue](https://github.com/waymo-research/waymo-open-dataset/issues/142#issuecomment-619359939).
 
 ## Differentiable LiDAR-to-depth
 - Get gradients of LiDAR point coordinates:
