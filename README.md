@@ -84,11 +84,11 @@ open_dataset
 |   |   |   |-- beam_inclination_max
 |   |   |   `-- extrinsic
 |   |   `-- Stats
-|   |   |-- laser_object_counts
-|   |   |-- camera_object_counts
-|   |   |-- time_of_day
-|   |   |-- location
-|   |   `-- weather
+|   |       |-- laser_object_counts
+|   |       |-- camera_object_counts
+|   |       |-- time_of_day
+|   |       |-- location
+|   |       `-- weather
 |   |-- timestamp_micros
 |   |-- pose
 |   |-- lasers ⇒ list of Laser
